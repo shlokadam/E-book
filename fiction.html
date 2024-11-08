@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ReadEase - Reading Made Easy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>FICTION</h1>
+</header>
+<section id="categories">
+
+<div id="category-grid">
+  <a href="fiction.html" target="_blank"><button>Fiction</button></a>
+  <a href="Non-fiction.html" target="_blank"><button>Non-fiction</button></a>
+  <a href="Science.html" target="_blank"><button>Science</button></a>
+  <a href="Mystery.html" target="_blank"><button>Mystery</button></a>
+  <a href="History.html" target="_blank"><button>History</button></a>
+  <a href="Biography.html" target="_blank"><button>Biography</button></a>
+  <a href="Fantacy.html" target="_blank"><button>Fantasy</button></a></div>
+</section>
+<section id="popular-books">
+<h2>Popular & Recommended Books</h2>
+<div id="book-grid">
+<div id="book-card">
+<h3>Pride and Prejudice</h3>
+<p>Novel by Jane Austen</p>
+<img src="E:\Mini Project\img\b1.jpeg">
+<a href='book1.pdf' target="_blank"><button>Read Now</button></a>
+<!-- <button onclick="openPdf()">Open PDF</button>
+<button id="btn1" onclick="startReading()">Read Now</button>
+<embed id="pdf1" src="D:\Mini Project\pdf\seuss-activity-book.pdf" type="application/pdf" width="100%" height="600px" /> -->
+</div>
+<div id="book-card">
+<h3>To Kill a Mockingbird</h3>
+<p>Novel by Harper Lee</p>
+ <img src="E:\Mini Project\img\b2.jpeg">
+ <a href="book 2.pdf" target="_blank"><button>Read Now</button></a>
+<!-- <button onclick="startReading()">Read Now</button> -->
+</div>
+<div id="book-card">
+<h3>Nineteen Eighty-Four</h3>
+<p>Novel by George Orwell</p>
+ <img src="E:\Mini Project\img\b3.jpeg">
+<button onclick="startReading()">Read Now</button>
+</div>
+<div id="book-card">
+<h3>The Hunger Games</h3>
+<p>Novel by Suzanne Collins</p>
+ <img src="E:\Mini Project\img\b4.jpeg">
+<button onclick="startReading()">Read Now</button>
+</div>
+<div id="book-card">
+<h3>The Book Thief</h3>
+<p>Novel by Markus Zusak</p>
+ <img src="E:\Mini Project\img\b5.jpeg">
+<button onclick="startReading()">Read Now</button>
+</div>
+<div id="book-card">
+<h3>The Kite Runner</h3>
+<p>Novel by Khaled Hosseini</p>
+ <img src="E:\Mini Project\img\b6.jpeg">
+<button onclick="startReading()">Read Now</button>
+</div>
+<div id="book-card">
+<h3>The Name of the Wind</h3>
+<p>Novel by Patrick Rothfuss</p>
+ <img src="E:\Mini Project\img\b7.jpeg">
+<button onclick="startReading()">Read Now</button>
+</div>
+</div>
+</section>
+<section id="popular-books">
+<h2>Best of all Time</h2>
+<div id="book-grid">
+<div id="book-card">
+<h3>Midnight's Children</h3>
+<p>by Salman Rushdie</p>
+ <img src="E:\Mini Project\img\c1.jpeg">
+<button onclick="startReading()">Read Now</button>
+</div>
+<div id="book-card">
+<h3>The Great Indian Novel </h3>
+<p>by Shashi Tharoor</p>
+ <img src="E:\Mini Project\img\c2.jpeg">
+<button onclick="startReading()">Read Now</button>
+</div>
+<div id="book-card">
+<h3>Poonachi</h3>
+<p>by Perumal Murugan</p>
+ <img src="E:\Mini Project\img\c3.jpeg">
+<button onclick="startReading()">Read Now</button>
+</div>
+<div id="book-card">
+<h3>The God of Small Things</h3>
+<p>by Arundhati Roy</p>
+ <img src="E:\Mini Project\img\c4.jpg">
+<button onclick="startReading()">Read Now</button>
+</div>
+<div id="book-card">
+<h3>A Fine Balance</h3>
+<p>by Rohinton Mistry</p>
+ <img src="E:\Mini Project\img\c5.jpeg">
+<button onclick="startReading()">Read Now</button>
+</div>
+<div id="book-card">
+<h3>The Guide</h3>
+<p>Novel by R. K. Narayan</p>
+ <img src="E:\Mini Project\img\c6.jpeg">
+<button onclick="startReading()">Read Now</button>
+</div>
+<div id="book-card">
+<h3>The Story of My Experiments with Truth</h3>
+<p>by Mahatma Gandhi</p>
+ <img src="E:\Mini Project\img\c7.jpeg">
+<button onclick="startReading()">Read Now</button>
+</div>
+</div>
+</section>
+<footer id="footers">
+<div id="footer-links">
+<a href="/sub1/About Us.html" target="_blank">About Us</a>
+<a href="sub1/Contact Us.html" target="_blank">Contact Us</a>
+<a href="sub1/Privacy Policy.html" target="_blank">Privacy Policy</a>
+<a href="sub1/Terms of Service.html" target="_blank">Terms of Service</a>
+</div>
+<p>© 2024 ReadEase. All rights reserved.</p>
+</footer >
+<div id="reading-interface" id="readingInterface">
+<button onclick="closeReading()">Close</button>
+<div id="book-content">
+<p>Start reading your selected book here...</p>
+</div>
+</div>
+<script src="script.js"></script>
+<script>
+function toggleAccountMenu() {
+const menu = document.getElementById('accountMenu');
+menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+}
+</script>
+function openPdf() {
+    window.open("pdf1", '_blank');
+  }
+  
+</body>
+</html>
